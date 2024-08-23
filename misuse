@@ -1,0 +1,161 @@
+<section class="section-event">
+		<div class="wrap-slick2">
+			<div class="slick2">
+				<div class="item-slick2 item1-slick2" style="background-image: url(images/bannerhome.png);">
+					<div class="wrap-content-slide2 p-t-115 p-b-208">
+						<div class="container">
+							<!-- - -->
+							<br><div class="title-event t-center m-b-52">
+								<span class="tit2 p-l-15 p-r-15">
+									Welcome To The
+								</span>
+
+								<!-- <h3 class="tit6 t-center p-l-15 p-r-15 p-t-3" >
+									Cotton Hut 
+								</h3> -->
+								 <br><br><div class="boddy">
+									<h2 id="main-heading">
+										<span id="text-1">COTTON</span>
+										HUT
+										<span id="text-2">DELHI</span>
+									</h2>
+									<p>Discover premium quality fabrics for all your clothing needs. At Cotton Hut,</p>
+									<!-- <p>Design & Developed by Afnan Shams</p> -->
+								  </div>
+								  <style>
+									@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
+								  
+									.boddy {
+									  font-family: 'Open Sans Condensed', sans-serif;
+									  display: flex;
+									  justify-content: center;
+									  align-items: center;
+									  flex-direction: column;
+									  
+									 
+									  box-sizing: border-box;
+									 
+									  overflow: hidden;
+								  }
+								  
+								  /* Slideshow Container */
+								  .boddy::before {
+									  content: '';
+									  
+									  animation: slideShow 15s infinite;
+								  }
+								  
+								  
+								  
+								  
+								  
+								  
+								  
+								  
+								  h2 {
+									  font-size: 6em;
+									  color: #ffffff;
+									  letter-spacing: 5px;
+									  cursor: pointer;
+									  text-align: center;
+									  margin: 0;
+								  }
+								  
+								  h2 span {
+									  transition: .5s;
+								  }
+								  
+								  h2:hover span {
+									  text-shadow: 0 0 10px #fff,  0 0 20px #fff,  0 0 40px #fff,  0 0 80px #fff,  0 0 120px #fff,  0 0 160px #fff;
+									  color: #fff;
+								  }
+								  
+								  h2:hover span:nth-child(1) {
+									  margin-right: 30px;
+								  }
+								  
+								  h2:hover span:nth-child(1)::after {
+									  content: ">";
+								  }
+								  
+								  h2:hover span:nth-child(2) {
+									  margin-left: 30px;
+								  }
+								  
+								  h2:hover span:nth-child(2)::before {
+									  content: "<";
+								  }
+								  
+								  p {
+									
+									  font-size: 1em;
+									  color: #fff;
+									  text-shadow: 0 0 5px #fff,  0 0 10px #fff,  0 0 20px #fff;
+									  text-align: center;
+								  }
+								  
+								  /* Responsive styles */
+								  @media (max-width: 1200px) {
+									  h2 {
+										  font-size: 5em;
+									  }
+								  }
+								  
+								  @media (max-width: 992px) {
+									  h2 {
+										  font-size: 4em;
+									  }
+								  }
+								  
+								  @media (max-width: 768px) {
+									  h2 {
+										  font-size: 3em;
+									  }
+								  }
+								  
+								  @media (max-width: 576px) {
+									  h2 {
+										  font-size: 2em;
+									  }
+								  
+									  p {
+										  font-size: 0.8em;
+									  }
+								  }
+								  
+								  @media (max-width: 400px) {
+									  h2 {
+										  font-size: 1.5em;
+									  }
+								  
+									  p {
+										  font-size: 0.7em;
+									  }
+								  }
+								  </style>
+								  <script>
+									// <p>Design & Developed by Afnan Shams</p>
+									document.getElementById('main-heading').addEventListener('mouseover', function() {
+										document.getElementById('text-1').textContent = 'دہلی'; 
+										document.getElementById('text-2').textContent = 'کاٹن'; 
+									});
+								  
+									document.getElementById('main-heading').addEventListener('mouseout', function() {
+										document.getElementById('text-1').textContent = 'COTTON';
+										document.getElementById('text-2').textContent = 'DELHI';
+									});
+								  </script>
+								  <hr>
+								  
+							</div>
+
+							<!-- Block2 -->
+							<div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="zoomIn">
+								
+
+								
+						
+
+			<div class="wrap-slick2-dots"></div>
+		</div>
+	</section>

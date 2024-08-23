@@ -198,32 +198,34 @@
 			<img src="images\WhatsApp Image 2024-07-26 at 21.56.26_5723c44c.jpg" alt="" class="image" />
 			<div class="image-data">
 			  <span class="text"></span>
+			  
 			  <h2> 
+			
 				<br />
-				Best Clothing Brand In India
-			  </h2>
-			  <a href="#" class="button">About Us</a>
+		Cotton Hut
+			</h2>
+	 <a href="#" class="button">About Us</a> 
 			</div>
 		  </div>
 		  <div class="slide swiper-slide">
-			<img src="images\new\IMG_0657.JPG" alt="" class="image" />
+			<img src="images/new/home1.jpg" alt="" class="image" />
 			<div class="image-data">
 			  <span class="text"></span>
 			  <h2>
 				<br />
-				
+			
 			  </h2>
-			  <a href="#" class="button">About Us</a>
+			  <!-- <a href="#" class="button">About Us</a> -->
 			</div>
 		  </div>
 		  <div class="slide swiper-slide">
-			<img src="images/new/IMG_0671.JPG" alt="" class="image" />
+			<img src="images/new/home2.jpg" alt="" class="image" />
 			<div class="image-data">
 			  <span class="text"></span>
 			  <h2>
-				
+			
 			  </h2>
-			  <a href="#" class="button">About Us</a>
+			  <!-- <a href="#" class="button">About Us</a> -->
 			</div>
 		  </div>
 		</div>
@@ -613,24 +615,24 @@ var swiper = new Swiper(".mySwiper", {
   const sliderScrollbar = document.querySelector(".slider-scrollbar");
   const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
   const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
-  let autoSlideInterval;
+  let autoSlideInterval; // Comment this out if auto-slide is not needed
 
-  // Function to handle auto sliding
-  const startAutoSlide = () => {
-    autoSlideInterval = setInterval(() => {
-      const scrollAmount = imageList.clientWidth;
-      if (imageList.scrollLeft >= maxScrollLeft) {
-        imageList.scrollTo({ left: 0, behavior: "smooth" });
-      } else {
-        imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
-      }
-    }, 3000); // Adjust the time interval (3000ms = 3 seconds)
-  };
+  // Function to handle auto sliding (remove if not needed)
+  // const startAutoSlide = () => {
+  //   autoSlideInterval = setInterval(() => {
+  //     const scrollAmount = imageList.clientWidth;
+  //     if (imageList.scrollLeft >= maxScrollLeft) {
+  //       imageList.scrollTo({ left: 0, behavior: "smooth" });
+  //     } else {
+  //       imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  //     }
+  //   }, 3000); // Adjust the time interval (3000ms = 3 seconds)
+  // };
 
-  // Stop auto sliding on manual control
+  // Stop auto sliding on manual control (remove if auto-slide is not needed)
   const stopAutoSlide = () => {
     clearInterval(autoSlideInterval);
-    startAutoSlide(); // Restart auto slide after user stops
+    // startAutoSlide(); // Do not restart auto-slide
   };
 
   // Handle scrollbar thumb drag
@@ -686,25 +688,18 @@ var swiper = new Swiper(".mySwiper", {
     handleSlideButtons();
   });
 
-  startAutoSlide(); // Initialize auto-sliding
+  // Do not start auto-slide
+  // startAutoSlide();
 };
 
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
+
 </script>
 
 	<!-- Intro -->
 	<section class="section-intro">
-		<div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url(https://github.com/burhanshams/cotton_hut-website/blob/main/images/new/IMG_0656.JPG?raw=true);">
-			<span class="tit2 p-l-15 p-r-15" style="color: #fff;">
-				Cotton Hut collection
-			</span>
-
-			<h6 class="tit4 t-center p-l-15 p-r-15 p-t-3">
-				
-			</h6>
-		</div>
-
+	
 		<div class="content-intro bg-white p-t-77 p-b-133">
 			<div class="container">
 				<div class="row">
@@ -712,22 +707,22 @@ window.addEventListener("load", initSlider);
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="https://siyaram-images.s3.ap-south-1.amazonaws.com/images/dino-morea.webp" alt="IMG-INTRO"></a>
+								<a ><img src="images/1si.png" alt="IMG-INTRO"></a>
 							</div>
 
 							<div class="wrap-text-blo1 p-t-35">
-								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Bollywood Fashion Icon
+								<a ><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+									Ivory White Traditional South Indian Kurta Pancha Set
 								</h4></a>
 
 								<p class="m-b-20">
-									Dino Morea redefines elegance and style, stepping into a new era of fashion that's bold and sophisticated. Discover the looks that are turning heads everywhere.
+									
 								</p>
 
-								<a href="#" class="txt4">
+								<!-- <a href="#" class="txt4">
 									Learn More
 									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-								</a>
+								</a> -->
 							</div>
 						</div>
 					</div>
@@ -736,22 +731,22 @@ window.addEventListener("load", initSlider);
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="https://siyaram-images.s3.ap-south-1.amazonaws.com/images/greatest_collections/bamboo.webp" alt="IMG-INTRO"></a>
+								<a ><img src="images/2si.png" alt="IMG-INTRO"></a>
 							</div>
 
 							<div class="wrap-text-blo1 p-t-35">
-								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Siyarams Bamboo Fabric
+								<a ><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+									Blue Black Panther Kurta Set Online in India Kurta Pajama for Men
 								</h4></a>
 
 								<p class="m-b-20">
-									Experience the luxury of eco-friendly fashion with Siyarams' Bamboo Fabric collection. Soft, sustainable, and stylish—perfect for the modern man who cares about the planet.
+									
 								</p>
 
-								<a href="#" class="txt4">
+								<!-- <a  class="txt4">
 									Learn More
 									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-								</a>
+								</a> -->
 							</div>
 						</div>
 					</div>
@@ -760,25 +755,174 @@ window.addEventListener("load", initSlider);
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="https://siyaram-images.s3.ap-south-1.amazonaws.com/images/greatest_collections/Ethnai.webp" alt="IMG-INTRO"></a>
+								<a ><img src="images/3si.png" alt="IMG-INTRO"></a>
 							</div>
 
 							<div class="wrap-text-blo1 p-t-35">
-								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Ethnic Elegance
+								<a ><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+									Black Cotton Embroidered Men Kurta Pajama
 								</h4></a>
 
 								<p class="m-b-20">
-									Celebrate the rich tradition of India with Ethnair. Our collection blends timeless patterns with contemporary design, creating outfits that are perfect for any occasion.
+									
 								</p>
 
-								<a href="#" class="txt4">
+								<!-- <a class="txt4">
 									Learn More
 									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-								</a>
+								</a> -->
 							</div>
 						</div>
 					</div>
+
+					<div class="col-md-4 p-t-30">
+						<!-- Block1 -->
+						<div class="blo1">
+							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
+								<a ><img src="images/4si.png" alt="IMG-INTRO"></a>
+							</div>
+
+							<div class="wrap-text-blo1 p-t-35">
+								<a ><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+									Men Regular Fit Embroidered Kurta Pyjama Set
+								</h4></a>
+
+								<p class="m-b-20">
+									
+								</p>
+
+								<!-- <a  class="txt4">
+									Learn More
+									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+								</a> -->
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-4 p-t-30">
+						<!-- Block1 -->
+						<div class="blo1">
+							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
+								<a ><img src="images/5si.png" alt="IMG-INTRO"></a>
+							</div>
+
+							<div class="wrap-text-blo1 p-t-35">
+								<a ><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+									Captain America Star Kurta Set
+								</h4></a>
+
+								<p class="m-b-20">
+									
+								</p>
+
+								<!-- <a  class="txt4">
+									Learn More
+									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+								</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 p-t-30">
+						<!-- Block1 -->
+						<div class="blo1">
+							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
+								<a ><img src="images/6si.png" alt="IMG-INTRO"></a>
+							</div>
+
+							<div class="wrap-text-blo1 p-t-35">
+								<a ><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+									Blue Georgette Kurta Set
+								</h4></a>
+
+								<p class="m-b-20">
+									
+								</p>
+
+								<!-- <a  class="txt4">
+									Learn More
+									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+								</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 p-t-30">
+						<!-- Block1 -->
+						<div class="blo1">
+							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
+								<a ><img src="images/7si.png" alt="IMG-INTRO"></a>
+							</div>
+
+							<div class="wrap-text-blo1 p-t-35">
+								<a ><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+									Elegant Cream Kurta Pajama
+								</h4></a>
+
+								<p class="m-b-20">
+									
+								</p>
+
+								<!-- <a  class="txt4">
+									Learn More
+									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+								</a> -->
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-4 p-t-30">
+						<!-- Block1 -->
+						<div class="blo1">
+							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
+								<a ><img src="images/8si.png" alt="IMG-INTRO"></a>
+							</div>
+
+							<div class="wrap-text-blo1 p-t-35">
+								<a ><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+									Blue Chikankari Readymade Kurta Pajama In Georgette
+								</h4></a>
+
+								<p class="m-b-20">
+									
+								</p>
+
+								<!-- <a  class="txt4">
+									Learn More
+									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+								</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 p-t-30">
+						<!-- Block1 -->
+						<div class="blo1">
+							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
+								<a ><img src="images/9si.png" alt="IMG-INTRO"></a>
+							</div>
+
+							<div class="wrap-text-blo1 p-t-35">
+								<a ><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+									blue chikankari embroidered and sequin kurta pyjama.
+								</h4></a>
+
+								<p class="m-b-20">
+									
+								</p>
+
+								<!-- <a  class="txt4">
+									Learn More
+									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+								</a> -->
+							</div>
+						</div>
+					</div>
+
+
+
 
 				</div>
 			</div>
@@ -797,89 +941,131 @@ window.addEventListener("load", initSlider);
 					Our Service
 				</h3>
 			</div>
-
-			<div class="row">
+,<center>
+			<div class="row" style="text-align: center;">
 				<div class="col-md-8">
 					<div class="row">
 						<div class="col-sm-6">
-							<!-- Item our menu -->
-							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom1 pos-relative m-t-30">
+								<img src="images/ruler.png" height="50" alt="IMG-MENU">
+
+								
+								<h3>
+									Tailoring Services:
+								</h3>
+								<p> Information about the tailoring services offered, including custom stitching for various types of clothing.</p>
+							</div>
+							
+							<!-- <div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
 								<img src="https://siyaram-images.s3.ap-south-1.amazonaws.com/images/trending/2.webp" alt="IMG-MENU">
 
-								<!-- Button2 -->
+								
 								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size4">
 									Tailoring
 								</a>
 							</div>
-						</div>
-
-						<div class="col-sm-6">
-							<!-- Item our menu -->
+					
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="https://siyaram-images.s3.ap-south-1.amazonaws.com/images/trending/3.webp" alt="IMG-MENU">
+								<img src="https://siyaram-images.s3.ap-south-1.amazonaws.com/images/trending/2.webp" alt="IMG-MENU">
 
-								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size5">
-									Readymade
+								
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size4">
+									Tailoring
 								</a>
+							</div> -->
+						</div>
+						<div class="col-sm-6">
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom1 pos-relative m-t-30">
+								<img src="images/communication.png" height="50" alt="IMG-MENU">
+
+								
+								<h3>
+									Introduction:
+								</h3>
+								<p>A brief introduction to Cotton Hut, mentioning the types of fabrics available and the tailoring services offered.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+				
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom1 pos-relative m-t-30">
+								<img src="images/fabric-pattern.png" alt="IMG-MENU">
+
+							
+								<h3>
+									Fabric Sales:
+								</h3>
+								<p> Details about the different types of fabrics available (e.g., kurta fabric, pajama fabric, t-shirt fabric)</p>
 							</div>
 						</div>
 
-						<div class="col-12">
-							<!-- Item our menu -->
+						<div class="col-sm-6">
+				
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom1 pos-relative m-t-30">
+								<img src="images/return.png" alt="IMG-MENU">
+
+							
+								<h3>
+									Easy & Hassle-Free Returns
+								</h3>
+								<p> Enjoy a seamless return process with our customer-friendly return policy.</p>
+							</div>
+						</div>
+
+						<!-- <div class="col-12">
+							
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
 								<img src="https://siyaram-images.s3.ap-south-1.amazonaws.com/images/businesses/about/fabric.jpg" alt="IMG-MENU">
 
-								<!-- Button2 -->
+							
 								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size6">
 									Fabric
 								</a>
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
-				<div class="col-md-4">
+				<!-- <div class="col-md-4">
 					<div class="row">
 						<div class="col-12">
-							<!-- Item our menu -->
+					
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
 								<img src="https://scontent.fdel50-1.fna.fbcdn.net/v/t39.30808-6/453211911_812290997678395_5505085052232782934_n.jpg?stp=dst-jpg_p526x296&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=kDAeOJ-mbdkQ7kNvgEzHyzJ&_nc_ht=scontent.fdel50-1.fna&oh=00_AYCVbbkr3b-XcoSGV6x0bfUtMj0jFFandltwEjKgo9tb3w&oe=66C152F6" alt="IMG-MENU">
 
-								<!-- Button2 -->
+							
 								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size7">
 									Wedding collection
 								</a>
 							</div>
-						</div>
+						</div> -->
 
-						<div class="col-12">
-							<!-- Item our menu -->
-							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+						<!-- <div class="col-12">		<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
 								<img src="https://scontent.fdel50-1.fna.fbcdn.net/v/t39.30808-6/453034673_812290327678462_7084380362116798265_n.jpg?stp=dst-jpg_p526x296&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=4ft5in59H5IQ7kNvgHRTIYU&_nc_ht=scontent.fdel50-1.fna&oh=00_AYA8ZCdrvF-p7r8LYNfDXWh2HrdLZBFAOSUEzQ7tgwE6zQ&oe=66C17E28" alt="IMG-MENU">
 
-								<!-- Button2 -->
+							
 								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size8">
 									uniq design
 								</a>
 							</div>
-						</div>
+						</div> -->
 
-						<div class="col-12">
-							<!-- Item our menu -->
+						<!-- <div class="col-12">
+							
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
 								<img src="https://scontent.fdel50-1.fna.fbcdn.net/v/t39.30808-6/453484912_812285721012256_4989197597828865689_n.jpg?stp=dst-jpg_p526x296&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KZK8Iy4b-b4Q7kNvgHcmIs8&_nc_ht=scontent.fdel50-1.fna&oh=00_AYD6VAD3xj-eQc_JDnjv6tiR8Ef7p8jUMBPjKrki8SibsQ&oe=66C167F8" alt="IMG-MENU">
 
-								<!-- Button2 -->
+							
 								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size9">
 									cloth combination
 								</a>
 							</div>
-						</div>
+						</div>  -->
+						
 					</div>
 				</div>
 			</div>
-
+		</center>
 		</div>
 	</section>
 
@@ -961,7 +1147,7 @@ window.addEventListener("load", initSlider);
 				</div>
 				<div class="col-lg-6 p-b-30 p-t-18">
 					<div class="wrap-pic-booking size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-						<img src="images/2homepost.jpg" alt="IMG-OUR">
+						<img src="images/new/IMG_0664.JPG"  alt="IMG-OUR">
 					</div>
 				</div>
 			</div>
