@@ -38,7 +38,15 @@
 
 <!-- Swiper's JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<style>
+	@media only screen and (max-width: 768px) {
+  .logo2 {
+    display: none;
+  }
+  
+}
 
+</style>
 </head>
 <body >
 
@@ -50,14 +58,23 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
+					
+						
 						<a href="index.html">
 							<img class="logo1" src="images/cotton-hut.svg" alt="IMG-LOGO" data-logofixed="images/cotton-hut.svg">
+						
+					
 						</a>
-					</div>
+						
 
+
+
+					</div>
+				
 					<!-- Menu -->
 					<div class="wrap_menu p-l-45 p-l-0-xl">
 						<nav class="menu">
+							<img src="images/cotton-hut.svg" height="80%" width="20%">
 							<ul class="main_menu">
 								<li>
 									<a href="index.html">Home</a>
@@ -190,6 +207,98 @@
 		</div>
 	</aside>
 
+	<!--  -->
+
+
+	<style>
+        /* CSS styles */
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", sans-serif;
+        } */
+
+        .body1 {
+            display: flex;
+            height: 10vh;
+            align-items: center;
+            justify-content: center;
+            background: #1D1E23;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        h1 span {
+            color: #c99e4e;
+            position: relative;
+        }
+
+        h1 span::before {
+            content: "";
+            height: 30px;
+            width: 2px;
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            background: #c99e4e;
+            transform: translateY(-45%);
+            animation: blink 0.7s infinite;
+        }
+
+        h1 span.stop-blinking::before {
+            animation: none;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head> <br><br><br><br><br>
+
+<div class="body1">
+	
+	 <br>
+    <h1>Look Is<span></span></h1>
+</div>
+    <script>
+        // JavaScript for typing effect
+        const dynamicText = document.querySelector("h1 span");
+        const words = [" Unique", " Premium", " Stylish", " Modern"];
+
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        const typeEffect = () => {
+            const currentWord = words[wordIndex];
+            const currentChar = currentWord.substring(0, charIndex);
+            dynamicText.textContent = currentChar;
+            dynamicText.classList.add("stop-blinking");
+
+            if (!isDeleting && charIndex < currentWord.length) {
+                // Typing characters
+                charIndex++;
+                setTimeout(typeEffect, 200);
+            } else if (isDeleting && charIndex > 0) {
+                // Deleting characters
+                charIndex--;
+                setTimeout(typeEffect, 100);
+            } else {
+                // Switch to the next word or start deleting
+                isDeleting = !isDeleting;
+                dynamicText.classList.remove("stop-blinking");
+                wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
+                setTimeout(typeEffect, 1200);
+            }
+        }
+
+        typeEffect();
+    </script>
 	<!-- Event -->
 	
 	<section class="main swiper mySwiper">
@@ -204,7 +313,7 @@
 				<br />
 		Cotton Hut
 			</h2>
-	 <a href="#" class="button">About Us</a> 
+	 <a href="#" class="button">Contact Us</a> 
 			</div>
 		  </div>
 		  <div class="slide swiper-slide">
@@ -213,17 +322,21 @@
 			  <span class="text"></span>
 			  <h2>
 				<br />
-			
+				Premium Clothing
+			</h2>
+	 <a href="#" class="button">Contact Us</a> 
 			  </h2>
 			  <!-- <a href="#" class="button">About Us</a> -->
 			</div>
 		  </div>
 		  <div class="slide swiper-slide">
-			<img src="images/new/home2.jpg" alt="" class="image" />
+			<img src="images/new/IMG_0656.JPG" alt="" class="image" />
 			<div class="image-data">
 			  <span class="text"></span>
 			  <h2>
-			
+				visit Our Shop 
+			</h2>
+	 <a href="#" class="button">Contact Us</a> 
 			  </h2>
 			  <!-- <a href="#" class="button">About Us</a> -->
 			</div>
@@ -310,7 +423,7 @@ a.button {
 
 a.button:hover {
   color: #fff;
-  background-color: #c87e4f;
+  background-color: #c99e4e;
 }
 
 .nav-btn {
@@ -348,7 +461,7 @@ a.button:hover {
 
 .swiper-pagination-bullet-active {
   border: 2px solid #fff;
-  background-color: #c87e4f;
+  background-color: #c99e4e;
 }
 
 @media screen and (max-width: 768px) {
@@ -449,7 +562,7 @@ var swiper = new Swiper(".mySwiper", {
 			<div class="wrap-slick1-dots"></div>
 		</div>
 	</section> -->
-<h1 style="text-align: center;">OUR GALLERY</h1><br>
+<h1 style="text-align: center; color: #c99e4e;">OUR GALLERY</h1><br>
 	<!-- Welcome -->
 	<div class="container">
 		<div class="slider-wrapperr">
@@ -507,7 +620,7 @@ var swiper = new Swiper(".mySwiper", {
   display: flex;
   cursor: pointer;
   font-size: 2.2rem;
-  background: #000;
+  background:#c99e4e;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -571,7 +684,7 @@ var swiper = new Swiper(".mySwiper", {
 
 .slider-scrollbar .scrollbar-thumb {
   position: absolute;
-  background: #000;
+  background: #c99e4e;
   top: 0;
   bottom: 0;
   width: 50%;
@@ -1285,7 +1398,7 @@ window.addEventListener("load", initSlider);
 
 
 	<!-- Video -->
-	<section class="section-video parallax100" style="background-image: url(images/bannerhome.png);">
+	<section class="section-video parallax100" style="background-image: url(images/new/IMG_0656.JPG);">
 		<div class="content-video t-center p-t-225 p-b-250">
 			<span class="tit2 p-l-15 p-r-15">Discover</span>
 			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">Our Video</h3>
@@ -1337,7 +1450,7 @@ window.addEventListener("load", initSlider);
 					<!-- Block1 -->
 					<div class="blo1">
 						<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
-							<a href="blog-detail.html"><img src="https://scontent.fdel50-1.fna.fbcdn.net/v/t39.30808-6/438095839_772982648275897_3752992717039112745_n.jpg?stp=dst-jpg_p526x296&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=mBdKxSeQ1bwQ7kNvgH-8DzV&_nc_ht=scontent.fdel50-1.fna&oh=00_AYDibqE-2qgDsrcSe5EwjQ9kMfZ9H-M4W8aZ3VE2BzrCfg&oe=66C221BB" alt="IMG-INTRO"></a>
+							<a href="blog-detail.html"><img src="images/mantishirts.jpg" alt="IMG-INTRO"></a>
 
 							<div class="time-blog">
 								
@@ -1361,8 +1474,8 @@ window.addEventListener("load", initSlider);
 					</div>
 				</div>
 
-				<div class="col-md-4 p-t-30">
-					<!-- Block1 -->
+				<!-- <div class="col-md-4 p-t-30">
+					
 					<div class="blo1">
 						<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
 							<a href="blog-detail1.html"><img src="https://scontent.fdel50-1.fna.fbcdn.net/v/t39.30808-6/431432104_731628509077978_8486345415517663685_n.jpg?stp=dst-jpg_p526x296&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=PBSgNC2Pr9kQ7kNvgHQhsQd&_nc_ht=scontent.fdel50-1.fna&oh=00_AYAPA1hoO49e1qFoSOpfXgjHVaqz7cp1jy1pw0eCfQFLNw&oe=66C218D6" alt="IMG-INTRO"></a>
@@ -1387,10 +1500,10 @@ window.addEventListener("load", initSlider);
 							</a>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
-				<div class="col-md-4 p-t-30">
-					<!-- Block1 -->
+				<!-- <div class="col-md-4 p-t-30">
+					
 					<div class="blo1">
 						<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
 							<a href="blog-detail3.html"><img src="https://scontent.fdel50-1.fna.fbcdn.net/v/t39.30808-6/431880622_731624372411725_951453155825513837_n.jpg?stp=dst-jpg_p526x296&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=p9vMxhKi1uMQ7kNvgHpWpmL&_nc_ht=scontent.fdel50-1.fna&oh=00_AYAtBQjWFdBbw7GZTFky_mi9TYSsveuZCG-bWBD_h6Ytow&oe=66C23803" alt="IMG-INTRO"></a>
@@ -1415,7 +1528,7 @@ window.addEventListener("load", initSlider);
 							</a>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 			</div>
 		</div>
