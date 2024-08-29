@@ -342,9 +342,9 @@
 			</div>
 		  </div>
 		</div>
-		<div class="swiper-button-next nav-btn"></div>
+		<!-- <div class="swiper-button-next nav-btn"></div>
 		<div class="swiper-button-prev nav-btn"></div>
-		<div class="swiper-pagination"></div>
+		<div class="swiper-pagination"></div> -->
 	  </section> <br><br><br><br><br>
 <style>
 	/* Import Google Fonts */
@@ -471,6 +471,50 @@ a.button:hover {
 
   .swiper-pagination-bullet {
     visibility: visible;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    height: 25vh; /* Overall section ki height ko slider ke barabar rakha */
+    overflow: hidden; /* Extra space ko hide kar diya */
+  }
+
+  .slide {
+    height: 100%; /* Slide ki height ko 100% set kiya */
+  }
+
+  .slide .image {
+    height: 100%; /* Image ki height ko 100% set kiya */
+    width: 100%; /* Width ko 100% rakha */
+  }
+
+  .image-data {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 10px;
+  }
+
+  .image-data h2 {
+    font-size: 18px; /* Font size ko chhota rakha */
+  }
+
+  .image-data span.text {
+    font-size: 10px; /* Font size ko chhota rakha */
+  }
+
+  .nav-btn {
+    visibility: hidden; /* Navigation buttons ko hide kiya */
+  }
+
+  .swiper-pagination {
+    bottom: 10px !important; /* Pagination bullets ko neeche adjust kiya */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .swiper-pagination-bullet {
+    visibility: visible; /* Bullets ko visible rakha */
   }
 }
 
