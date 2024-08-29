@@ -485,14 +485,13 @@ input[type="date" i] {
 .wrap-menu-header {
   position: absolute;
   width: 100%;
-  height: 120px;
+  height: 80px;
   top: 0;
   left: 0;
   z-index: 100;
   border-top: 5px solid #c99e4e;
-background-color: #c99e4e;
+  background-color: #c99e4e;
 }
-
 .wrap_header {
   display: -webkit-box;
   display: -webkit-flex;
